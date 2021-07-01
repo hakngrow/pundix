@@ -18,3 +18,6 @@ There are a few assumptions I had to make regarding the above requirements.
 - The initial supply of tokens will reside within the token contract address
 - Mint, burn and lock functions will not have any access control to facilitate testing by the PundiX team
 - Only Ether can be send to a payable function, I implemented `sending tokens into this function` as a burn function accepting the address to burn from and amount of tokens to burn 
+
+I used Remix's flatten extension to combine all dependencies into a single solidity file. 
+![Remix Flatten Extension](/images/readme1.jpg")
