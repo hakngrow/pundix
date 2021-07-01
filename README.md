@@ -19,5 +19,6 @@ There are a few assumptions I had to make regarding the above requirements.
 - Mint, burn and lock functions will not have any access control to facilitate testing by the PundiX team
 - Only Ether can be send to a payable function, I implemented `sending tokens into this function` as a burn function accepting the address to burn from and amount of tokens to burn 
 
-I used Remix's flatten extension to combine all dependencies into a single solidity file. 
-![Remix Flatten Extension](/images/readme1.jpg")
+I used Remix's flatten extension to combine all dependencies into a single Solidity file. After which, I had to remove any duplicate license identifiers (i.e. `// SPDX-License-Identifier: MIT`).  I also had to re-arrange the order which the inherited base contracts/interfaces were declared. The most 'parent' contracts/interfaces must be declared first, followed by the inheriting child contracts/interfaces. 
+
+![Remix Flatten Extension](/images/readme1.jpg?raw=true)
